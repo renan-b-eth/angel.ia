@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image'; // Importar o componente Image do Next.js
 
 // --- Estilização ---
 const SectionContainer = styled.section`
@@ -108,7 +109,13 @@ const SolutionSection: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          [IMAGEM ILUSTRATIVA DA TECNOLOGIA]
+           <Image 
+                    src="/images/banner.png" // Caminho para a sua logo
+                    alt="angel.ia Logo"
+                    width={350} // Largura da imagem da logo em pixels
+                    height={350} // Altura da imagem da logo em pixels
+                    priority // Prioriza o carregamento desta imagem
+                  />
         </ImageColumn>
         <TextColumn
           variants={fromRight}

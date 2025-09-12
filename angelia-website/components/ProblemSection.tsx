@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion, Variants } from 'framer-motion';
+import Image from 'next/image'; // Importar o componente Image do Next.js
 
 // --- Estilização ---
 const SectionContainer = styled.section`
@@ -82,6 +83,13 @@ const cardVariants: Variants = {
 const ProblemSection: React.FC = () => {
   return (
     <SectionContainer>
+        <Image 
+                  src="/images/logo_redonda.png" // Caminho para a sua logo
+                  alt="angel.ia Logo"
+                  width={500} // Largura da imagem da logo em pixels
+                  height={500} // Altura da imagem da logo em pixels
+                  priority // Prioriza o carregamento desta imagem
+                />
       <Title>Diagnósticos tardios mudam vidas.<br/>E se pudéssemos agir antes?</Title>
       <GridContainer
         variants={gridVariants}
