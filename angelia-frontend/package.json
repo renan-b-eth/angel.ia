@@ -1,5 +1,5 @@
 {
-  "name": "angelia-website",
+  "name": "angelia-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
-    "@vercel/analytics": "^1.5.0",
     "framer-motion": "^12.23.12",
     "gsap": "^3.13.0",
     "next": "15.5.3",
